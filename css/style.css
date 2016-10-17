@@ -21,3 +21,12 @@
 .after-table {
   padding-right: 6px;
 }
+
+.card-content h4 {
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+.card-content h5 {
+  font-size: 0.8em;
+}
