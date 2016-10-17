@@ -6,12 +6,12 @@
 //   3. Error Checking on Delivery Information.
 
 var subTotal = 0;
-var foodTaxes = 0;
 
 addEventListeners();
 
 function updateTotals() {
   var runningTotal = 0;
+  var foodTaxes = (subTotal * 0.029);
   var subtotalData = document.querySelector(".subtotal-data");
   var taxesData = document.querySelector(".taxes-data");
   var totalData = document.querySelector(".total-data");
@@ -72,7 +72,6 @@ function addItemToTable(event) {
     subTotal += 7.99;
   }
 
-  foodTaxes += (subTotal * 1.29) - subTotal;
   updateTotals();
 }
 
