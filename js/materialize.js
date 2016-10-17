@@ -1,3 +1,5 @@
+'use strict';
+
 /*!
  * Materialize v0.97.7 (http://materializecss.com)
  * Copyright 2014-2015 Materialize
@@ -6,7 +8,8 @@
 // Check for jQuery.
 if (typeof(jQuery) === 'undefined') {
   var jQuery;
-  // Check if require is a defined function.
+
+// Check if require is a defined function.
   if (typeof(require) === 'function') {
     jQuery = $ = require('jquery');
   // Else use the dollar sign alias.
@@ -2029,7 +2032,7 @@ $(document).ready(function(){
         }
         else {
           // Insert as text;
-          toast.innerHTML = html; 
+          toast.innerHTML = html;
         }
         // Bind hammer
         var hammerHandler = new Hammer(toast, {prevent_default: false});

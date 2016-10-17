@@ -13,3 +13,11 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+.card-heading-text {
+  font-size: 22px;
+}
+
+.after-table {
+  padding-right: 6px;
+}

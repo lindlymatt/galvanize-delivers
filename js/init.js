@@ -1,3 +1,5 @@
+'use strict';
+
 (function($){
   $(function(){
 
@@ -8,5 +10,5 @@
 
 $(document).ready(function()
 {
-  $('.parallax').parallax(); 
+  $('.parallax').parallax();
 });
