@@ -6,6 +6,10 @@
  * Made By MaterializeCSS.com
  */
 
+.brand-logo {
+  margin-left: 0.3em;
+}
+
 .icon-block {
   padding: 0 15px;
 }
