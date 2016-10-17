@@ -48,7 +48,7 @@
                        <p>$8.99</p>
                      </div>
                      <div class="card-action">
-                       <a class="pink-text text-lighten-2" href="#">Add to Order</a>
+                       <a class="pink-text text-lighten-2 royal-btn-item" href="#">Add to Order</a>
                      </div>
                    </div>
                  </div>
@@ -62,7 +62,7 @@
                        <p>$11.99</p>
                      </div>
                      <div class="card-action">
-                       <a class="pink-text text-lighten-2" href="#">Add to Order</a>
+                       <a class="pink-text text-lighten-2 arugula-btn-item" href="#">Add to Order</a>
                      </div>
                    </div>
                  </div>
@@ -79,7 +79,7 @@
                        <p>$14.99</p>
                      </div>
                      <div class="card-action">
-                       <a class="pink-text text-lighten-2" href="#">Add to Order</a>
+                       <a class="pink-text text-lighten-2 swine-btn-item" href="#">Add to Order</a>
                      </div>
                    </div>
                  </div>
@@ -93,7 +93,7 @@
                        <p>$7.99</p>
                      </div>
                      <div class="card-action">
-                       <a class="pink-text text-lighten-2" href="#">Add to Order</a>
+                       <a class="pink-text text-lighten-2 ice-btn-item" href="#">Add to Order</a>
                      </div>
                    </div>
                  </div>
@@ -106,26 +106,14 @@
               <h4>Order</h4>
 
               <!-- Start Table -->
-              <table class="striped">
+              <table class="striped items-table">
                 <thead>
                   <tr>
-                      <th data-field="id">Item</th>
-                      <th class="right" data-field="name">Price</th>
+                    <th data-field="id">Item</th>
+                    <th class="right" data-field="name">Price</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                      <td>Royale with Cheese</td>
-                      <td class="right">$11.00</td>
-                  </tr>
-                  <tr>
-                      <td>Royale with Cheese</td>
-                      <td class="right">$11.00</td>
-                  </tr>
-                  <tr>
-                      <td>Royale with Cheese</td>
-                      <td class="right">$11.00</td>
-                  </tr>
+                <tbody class="table-body-class">
                 </tbody>
               </table>
               <!-- Start Subtotal -->
@@ -143,7 +131,7 @@
                   <p class="right">Tax</p>
                 </div>
                 <div class="col s12 m3">
-                  <p class="right after-table subtotal-data">$0.00</p>
+                  <p class="right after-table taxes-data">$0.00</p>
                 </div>
               </div>
               <!-- Start Total -->
@@ -152,13 +140,13 @@
                   <p class="right">Total</p>
                 </div>
                 <div class="col s12 m3">
-                  <p class="right after-table subtotal-data">$0.00</p>
+                  <p class="right after-table total-data">$0.00</p>
                 </div>
               </div>
               <!-- Start Input Form -->
               <div class="row">
 
-                <form class="col s12">
+                <form class="col s12 order-form">
                   <div class="row">
                     <div class="input-field col s12">
                       <i class="material-icons pink-text text-lighten-2 prefix">account_circle</i>
@@ -178,8 +166,8 @@
                   <div class="row">
                     <div class="input-field col s12">
                       <i class="material-icons pink-text text-lighten-2 prefix">business</i>
-                      <textarea id="textarea1" class="materialize-textarea"></textarea>
-                      <label for="textarea1">Address</label>
+                      <textarea id="address_field" class="materialize-textarea validate"></textarea>
+                      <label for="address_field">Address</label>
                     </div>
                   </div>
                 </form>
@@ -189,7 +177,7 @@
               <div class="row">
                 <div class="col s12">
                   <div class="row center">
-                    <a href="order.html" id="download-button" class="btn-large waves-effect waves-light-orange pink lighten-2 place-order-button">Place Order</a>
+                    <a href="#" type="button" id="download-button" class="btn-large waves-effect waves-light-orange pink lighten-2 place-order-button">Place Order</a>
                   </div>
                 </div>
               </div>
