@@ -6,8 +6,8 @@
 //   3. Error Checking on Delivery Information.
 
 var subTotal = 0;
-
 addEventListeners();
+updateTotals();
 
 function updateTotals() {
   var runningTotal = 0;
@@ -110,8 +110,6 @@ function errorCheckInput() {
     table.appendChild(tableBod);
     tableBod.className = "table-body-class";
     subTotal = 0;
-    foodTaxes = 0;
-
     updateTotals();
   }
 }
